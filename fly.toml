@@ -1,0 +1,18 @@
+app = "paranormal-insta"
+primary_region = "mia"
+
+[build]
+
+[env]
+  SUPABASE_URL = "https://irrrhqcdjkgziurirfaf.supabase.co"
+
+[[mounts]]
+  source = "instagram_data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "1gb"
+
+[deploy]
+  strategy = "immediate"
